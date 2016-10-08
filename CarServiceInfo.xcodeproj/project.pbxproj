@@ -99,6 +99,12 @@
 		97536CC81DA8E53900D56DCF /* CarServiceInfo */ = {
 			isa = PBXGroup;
 			children = (
+				97536CFF1DA8F04C00D56DCF /* Service */,
+				97536CFE1DA8F04100D56DCF /* Util */,
+				97536CFD1DA8F03500D56DCF /* Resources */,
+				97536CFC1DA8F02000D56DCF /* Controller */,
+				97536CFB1DA8F01900D56DCF /* View */,
+				97536CFA1DA8F00F00D56DCF /* Model */,
 				97536CC91DA8E53900D56DCF /* AppDelegate.swift */,
 				97536CCB1DA8E53900D56DCF /* ViewController.swift */,
 				97536CCD1DA8E53900D56DCF /* Main.storyboard */,
@@ -126,6 +132,48 @@
 				97536CEE1DA8E53900D56DCF /* Info.plist */,
 			);
 			path = CarServiceInfoUITests;
+			sourceTree = "<group>";
+		};
+		97536CFA1DA8F00F00D56DCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		97536CFB1DA8F01900D56DCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		97536CFC1DA8F02000D56DCF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		97536CFD1DA8F03500D56DCF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		97536CFE1DA8F04100D56DCF /* Util */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Util;
+			sourceTree = "<group>";
+		};
+		97536CFF1DA8F04C00D56DCF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -421,10 +469,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7472D832U2;
 				INFOPLIST_FILE = CarServiceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseysamoylov.CarServiceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -434,10 +484,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 7472D832U2;
 				INFOPLIST_FILE = CarServiceInfo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseysamoylov.CarServiceInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

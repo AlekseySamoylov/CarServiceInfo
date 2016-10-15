@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11232" systemVersion="16B2327e" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Image" representedClassName=".Image" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <relationship name="toPrice" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Price" inverseName="toImage" inverseEntity="Price" syncable="YES"/>
+        <relationship name="toPriceGroup" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="PriceGroup" inverseName="toImage" inverseEntity="PriceGroup" syncable="YES"/>
+    </entity>
+    <entity name="Price" representedClassName=".Price" syncable="YES">
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="price" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="toPrice" inverseEntity="Image" syncable="YES"/>
+        <relationship name="toPriceGroup" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="PriceGroup" inverseName="toPrice" inverseEntity="PriceGroup" syncable="YES"/>
+    </entity>
+    <entity name="PriceGroup" representedClassName=".PriceGroup" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="toImage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Image" inverseName="toPriceGroup" inverseEntity="Image" syncable="YES"/>
+        <relationship name="toPrice" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Price" inverseName="toPriceGroup" inverseEntity="Price" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Price" positionX="-200" positionY="-3" width="128" height="120"/>
+        <element name="PriceGroup" positionX="43" positionY="252" width="128" height="90"/>
+        <element name="Image" positionX="268" positionY="27" width="128" height="90"/>
+    </elements>
 </model>

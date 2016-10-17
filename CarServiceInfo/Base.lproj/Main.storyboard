@@ -87,11 +87,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-Iq-hcd">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceGroupCell" rowHeight="140" id="f2I-8g-HIm" customClass="PriceGroupCell" customModule="CarServiceInfo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PriceGroupCell" rowHeight="140" id="f2I-8g-HIm" customClass="PriceGroupCell" customModule="CarServiceInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f2I-8g-HIm" id="dd0-7Z-bHo">
-                                            <frame key="frameInset" width="375" height="139.5"/>
+                                            <frame key="frameInset" width="375" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PBh-I7-6mn">
@@ -130,6 +130,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="PBh-I7-6mn" secondAttribute="bottom" constant="8" id="yPV-MW-ibg"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="thumb" destination="PBh-I7-6mn" id="2IS-3w-6zI"/>
                                             <outlet property="title" destination="Ysi-eV-yB8" id="Trc-QR-ejw"/>
@@ -354,7 +355,6 @@
         <!--Услуги-->
         <scene sceneID="SZe-Nv-mUv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="laa-8k-Zjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qob-vO-srr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Услуги" image="search" id="CgR-9q-Hc2"/>
                     <toolbarItems/>
@@ -367,6 +367,7 @@
                         <segue destination="D9Y-d4-AL3" kind="relationship" relationship="rootViewController" id="Zy9-IG-RDr"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="laa-8k-Zjq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2491.875" y="617.5"/>
         </scene>
@@ -385,11 +386,11 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-mI-4gr">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PriceCell" rowHeight="140" id="AEK-wj-jqs" customClass="PriceCell" customModule="CarServiceInfo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PriceCell" rowHeight="140" id="AEK-wj-jqs" customClass="PriceCell" customModule="CarServiceInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AEK-wj-jqs" id="ZFB-i4-yBV">
-                                            <frame key="frameInset" width="375" height="139.5"/>
+                                            <frame key="frameInset" width="375" height="139"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="REr-Ev-gi0">
@@ -427,6 +428,7 @@
                                                 <constraint firstItem="REr-Ev-gi0" firstAttribute="centerX" secondItem="ZFB-i4-yBV" secondAttribute="centerX" id="tQs-xF-Zlr"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         <connections>
                                             <outlet property="thumb" destination="U1O-Vs-scd" id="8Nl-TC-ap5"/>
                                             <outlet property="title" destination="OzY-T9-euE" id="Wce-ba-fXs"/>

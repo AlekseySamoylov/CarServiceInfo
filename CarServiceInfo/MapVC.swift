@@ -27,7 +27,7 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
         
         // set initial location in Perm
-        let initialLocation = CLLocation(latitude: 57.997237, longitude: 56.306726)
+        let initialLocation = CLLocation(latitude: LATITUDE_PERM, longitude: LONGITUDE_PERM)
         centerMapOnLocation(initialLocation)
         
         mapView.delegate = self

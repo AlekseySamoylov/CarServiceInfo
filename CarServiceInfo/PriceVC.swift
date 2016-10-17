@@ -20,7 +20,6 @@ class PriceVC: UIViewController, UINavigationControllerDelegate  {
     @IBOutlet weak var details: UITextView!
     
     var priceItem: Price?
-    let companyPhone: String = "+79223402527"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,7 +35,7 @@ class PriceVC: UIViewController, UINavigationControllerDelegate  {
     }
 
     @IBAction func callToCompany(_ sender: UIButton) {
-        if let url = NSURL(string: "tel://\(companyPhone)") {
+        if let url = NSURL(string: "tel://\(MY_PHONE)") {
             UIApplication.shared.openURL(url as URL)
         }
     }

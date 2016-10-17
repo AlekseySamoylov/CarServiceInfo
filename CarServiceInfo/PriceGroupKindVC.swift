@@ -32,7 +32,27 @@ class PriceGroupKindVC: UIViewController, UITableViewDelegate, UITableViewDataSo
     }
 
 
-    // Заполняет поля
+    
+    // Возвращает количество секций
+    func numberOfSections(in tableView: UITableView) -> Int {
+        if let sections = controller.sections {
+            return sections.count
+        } else {
+            return 0
+        }
+    }
+    
+    // Возвращает колличество строк в секции
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let sections = controller.sections {
+            let sectionInfo = sections[section]
+            return sectionInfo.numberOfObjects
+        } else {
+            return 0
+        }
+    }
+    
+    // Заполняет ячейки
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "PriceGroupCell", for: indexPath) as! PriceGroupCell
         configureCell(cell: cell, indexPath: indexPath as NSIndexPath)
@@ -64,24 +84,6 @@ class PriceGroupKindVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         }
     }
     
-    // Возвращает колличество строк в секции
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let sections = controller.sections {
-            let sectionInfo = sections[section]
-            return sectionInfo.numberOfObjects
-        } else {
-            return 0
-        }
-    }
-    
-    // Возвращает количество секций
-    func numberOfSections(in tableView: UITableView) -> Int {
-        if let sections = controller.sections {
-            return sections.count
-        } else {
-            return 0
-        }
-    }
     
     // Возвращает высоку ячейки
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

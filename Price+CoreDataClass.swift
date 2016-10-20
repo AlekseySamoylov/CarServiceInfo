@@ -9,7 +9,8 @@
 import Foundation
 import CoreData
 
-
 public class Price: NSManagedObject {
+
+    
 
 }

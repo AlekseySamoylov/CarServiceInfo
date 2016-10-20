@@ -13,7 +13,7 @@ class PriceGroupKindVC: UIViewController, UITableViewDelegate, UITableViewDataSo
 
     @IBOutlet weak var tableView: UITableView!
     var controller: NSFetchedResultsController<PriceGroup>!
-    
+    var testPriceUrl = PriceDB()
     
     
     override func viewDidLoad() {
@@ -22,6 +22,9 @@ class PriceGroupKindVC: UIViewController, UITableViewDelegate, UITableViewDataSo
         tableView.delegate = self
         tableView.dataSource = self
         
+        testPriceUrl.downloadPriceDetails {
+            // Setup UI to load Data
+        }
         
         initPriceGroupKindArray()
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 46;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,6 +32,8 @@
 		9787D2481DB25C6500EEE271 /* Price+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2421DB25C6500EEE271 /* Price+CoreDataClass.swift */; };
 		9787D2491DB25C6500EEE271 /* Price+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2431DB25C6500EEE271 /* Price+CoreDataProperties.swift */; };
 		9787D24B1DB2683C00EEE271 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D24A1DB2683C00EEE271 /* PriceCell.swift */; };
+		9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279D1DB5EEAE00F88A74 /* Message.swift */; };
+		979427A01DB5F36100F88A74 /* PriceDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279F1DB5F36100F88A74 /* PriceDB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,8 @@
 		9787D2421DB25C6500EEE271 /* Price+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Price+CoreDataClass.swift"; path = "../Price+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9787D2431DB25C6500EEE271 /* Price+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Price+CoreDataProperties.swift"; path = "../Price+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9787D24A1DB2683C00EEE271 /* PriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
+		9794279D1DB5EEAE00F88A74 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		9794279F1DB5F36100F88A74 /* PriceDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDB.swift; sourceTree = "<group>"; };
 		C56A26885BEB0DB2383DE401 /* Pods-CarServiceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfo/Pods-CarServiceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		C7A960537ED405FDBD2913D4 /* Pods_CarServiceInfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarServiceInfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4D35EB50FB7B7E5355F3EC3 /* Pods-CarServiceInfoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfoUITests/Pods-CarServiceInfoUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +202,8 @@
 				9787D23E1DB25C6500EEE271 /* Image+CoreDataClass.swift */,
 				9787D2401DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift */,
 				9787D2421DB25C6500EEE271 /* Price+CoreDataClass.swift */,
+				9794279F1DB5F36100F88A74 /* PriceDB.swift */,
+				9794279D1DB5EEAE00F88A74 /* Message.swift */,
 				9787D22B1DB23F5700EEE271 /* Generated */,
 			);
 			name = Model;
@@ -360,7 +366,7 @@
 				};
 			};
 			buildConfigurationList = 97536CC11DA8E53800D56DCF /* Build configuration list for PBXProject "CarServiceInfo" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -534,6 +540,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				979427A01DB5F36100F88A74 /* PriceDB.swift in Sources */,
 				97536CCC1DA8E53900D56DCF /* ViewController.swift in Sources */,
 				9787D2481DB25C6500EEE271 /* Price+CoreDataClass.swift in Sources */,
 				9787D2461DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift in Sources */,
@@ -541,6 +548,7 @@
 				9787D2331DB251EE00EEE271 /* PriceVC.swift in Sources */,
 				97536CCA1DA8E53900D56DCF /* AppDelegate.swift in Sources */,
 				9787D2371DB2542800EEE271 /* PriceGroupCell.swift in Sources */,
+				9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */,
 				9727BA6D1DB3BEBC003D1272 /* CurrentNews.swift in Sources */,
 				9727BA6B1DB3B64B003D1272 /* Constants.swift in Sources */,
 				9787D22F1DB24B3200EEE271 /* PriceGroupKindVC.swift in Sources */,

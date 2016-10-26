@@ -1,0 +1,6 @@
+framework module Pods_CarServiceInfo {
+  umbrella header "Pods-CarServiceInfo-umbrella.h"
+
+  export *
+  module * { export * }
+}

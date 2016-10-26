@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9eT-n6-aGm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9eT-n6-aGm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -49,28 +49,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MOR-w8-gvb"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zBU-v3-4Ch" customClass="GMSMapView">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="MOR-w8-gvb" secondAttribute="trailing" id="1ir-BI-4TE"/>
-                            <constraint firstItem="MOR-w8-gvb" firstAttribute="top" secondItem="449-YK-eeu" secondAttribute="top" id="7Bf-cO-Smt"/>
-                            <constraint firstItem="MOR-w8-gvb" firstAttribute="bottom" secondItem="dWN-Fy-ysg" secondAttribute="top" id="8PY-LO-Eiy"/>
-                            <constraint firstAttribute="trailing" secondItem="MOR-w8-gvb" secondAttribute="trailing" id="8xh-Yb-3Kt"/>
-                            <constraint firstItem="dWN-Fy-ysg" firstAttribute="top" secondItem="MOR-w8-gvb" secondAttribute="bottom" id="NH5-pQ-3XI"/>
-                            <constraint firstItem="MOR-w8-gvb" firstAttribute="leading" secondItem="449-YK-eeu" secondAttribute="leading" id="ZOS-qS-Njo"/>
-                            <constraint firstItem="MOR-w8-gvb" firstAttribute="leading" secondItem="449-YK-eeu" secondAttribute="leading" id="ef5-XR-FZv"/>
-                            <constraint firstItem="MOR-w8-gvb" firstAttribute="top" secondItem="449-YK-eeu" secondAttribute="topMargin" id="yeh-UB-f8Q"/>
+                            <constraint firstItem="zBU-v3-4Ch" firstAttribute="top" secondItem="ET8-h7-Twr" secondAttribute="bottom" id="Nhh-xY-fXn"/>
+                            <constraint firstAttribute="trailing" secondItem="zBU-v3-4Ch" secondAttribute="trailing" id="ZTe-OW-fwA"/>
+                            <constraint firstItem="dWN-Fy-ysg" firstAttribute="top" secondItem="zBU-v3-4Ch" secondAttribute="bottom" id="g3v-FL-ncH"/>
+                            <constraint firstItem="zBU-v3-4Ch" firstAttribute="leading" secondItem="449-YK-eeu" secondAttribute="leading" id="mOu-hW-sEP"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Карта" image="map" id="SiR-Rq-L9S"/>
                     <connections>
-                        <outlet property="mapView" destination="MOR-w8-gvb" id="VMn-Dx-Zp5"/>
+                        <outlet property="mapView" destination="zBU-v3-4Ch" id="RXJ-2W-SJE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LIw-aV-Ctn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1488.75" y="1100"/>
+            <point key="canvasLocation" x="1487.2" y="1099.7001499250375"/>
         </scene>
         <!--Предлагаем-->
         <scene sceneID="ctA-Xc-VAj">

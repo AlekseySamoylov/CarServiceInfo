@@ -8,10 +8,12 @@
 
 import UIKit
 import MapKit
+import GoogleMaps
+import CoreLocation
 
-class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
+class MapVC: UIViewController, CLLocationManagerDelegate {
 
-    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var mapView: GMSMapView!
     
     let regionRadius: CLLocationDistance = 10000
     
@@ -22,29 +24,64 @@ class MapVC: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
         super.viewDidLoad()
         
         locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
+        self.locationManager.distanceFilter = 100
+        self.locationManager.requestWhenInUseAuthorization()
         //locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
+        //locationManager.startUpdatingLocation()
         
         // set initial location in Perm
-        let initialLocation = CLLocation(latitude: LATITUDE_PERM, longitude: LONGITUDE_PERM)
-        centerMapOnLocation(initialLocation)
+        let camera = GMSCameraPosition.camera(withLatitude: LATITUDE_PERM,
+                                              longitude: LONGITUDE_PERM, zoom: 10)
+        self.mapView.camera = camera
+        //let initialLocation = CLLocation(latitude: LATITUDE_PERM, longitude: LONGITUDE_PERM)
+        //centerMapOnLocation(initialLocation)
         
-        mapView.delegate = self
+        //mapView.delegate = self
+        
+        let marker = GMSMarker()
+        marker.position = CLLocationCoordinate2DMake(LATITUDE_PERM, LONGITUDE_PERM)
+        marker.title = "Пермь"
+        marker.snippet = "Россия"
+        marker.map = mapView
+
     }
     
-    func centerMapOnLocation(_ location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegionMakeWithDistance(location.coordinate,
-                                                                  regionRadius * 2.0, regionRadius * 2.0)
-        mapView.setRegion(coordinateRegion, animated: true)
-    }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - CLLocationManagerDelegate
+    private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
+        // 3
+        if status == .authorizedWhenInUse {
+            
+            // 4
+            self.locationManager.startUpdatingLocation()
+            
+            //5
+            self.mapView.isMyLocationEnabled = true
+            self.mapView.settings.myLocationButton = true
+        }
+    }
+    
+    // 6
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            
+            // 7
+            mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
+            
+            // 8
+            locationManager.stopUpdatingLocation()
+        }
+        
+    }
 
+    
+    
     /*
     // MARK: - Navigation
 

@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A9BD2B83124EA3C873E43C80F30B1F07"
-               BuildableName = "Pods_CarServiceInfo.framework"
-               BlueprintName = "Pods-CarServiceInfo"
+               BlueprintIdentifier = "05A7E5BA702806D910600796E9410D19"
+               BuildableName = "Pods_CarServiceInfoTests.framework"
+               BlueprintName = "Pods-CarServiceInfoTests"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A9BD2B83124EA3C873E43C80F30B1F07"
-            BuildableName = "Pods_CarServiceInfo.framework"
-            BlueprintName = "Pods-CarServiceInfo"
+            BlueprintIdentifier = "05A7E5BA702806D910600796E9410D19"
+            BuildableName = "Pods_CarServiceInfoTests.framework"
+            BlueprintName = "Pods-CarServiceInfoTests"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

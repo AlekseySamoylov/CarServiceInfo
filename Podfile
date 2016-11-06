@@ -3,5 +3,9 @@ platform :ios, '10.0'
 target "CarServiceInfo" do
     pod 'GoogleMaps'
     pod 'Alamofire', '~> 4.0'
-use_frameworks!
+    pod 'SwiftyJSON'
+    target 'CarServiceInfoTests' do
+        inherit! :search_paths
+    end
 end
+use_frameworks!

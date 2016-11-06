@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		401CA89FC77C22DDCA6443E2 /* Pods_CarServiceInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19D2AC2C127403293D88395F /* Pods_CarServiceInfo.framework */; };
+		7ED9CB3AE0891D6D729C5205 /* Pods_CarServiceInfoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 940FBA65508FA37E61B43D94 /* Pods_CarServiceInfoTests.framework */; };
 		9727BA6B1DB3B64B003D1272 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727BA6A1DB3B64B003D1272 /* Constants.swift */; };
 		9727BA6D1DB3BEBC003D1272 /* CurrentNews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9727BA6C1DB3BEBC003D1272 /* CurrentNews.swift */; };
 		97536CCA1DA8E53900D56DCF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97536CC91DA8E53900D56DCF /* AppDelegate.swift */; };
@@ -32,7 +33,16 @@
 		9787D24B1DB2683C00EEE271 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D24A1DB2683C00EEE271 /* PriceCell.swift */; };
 		9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279D1DB5EEAE00F88A74 /* Message.swift */; };
 		979427A01DB5F36100F88A74 /* PriceDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279F1DB5F36100F88A74 /* PriceDB.swift */; };
+		CE2C79E11DCF67C70072F790 /* MapViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */; };
 		CE7283D81DC1171300ED76D1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CE7283D71DC1171300ED76D1 /* Podfile */; };
+		CE7283DA1DC25C2D00ED76D1 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */; };
+		CE7283DE1DC25EA200ED76D1 /* MarkersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */; };
+		CE7283E01DC27EC500ED76D1 /* MarkersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283DF1DC27EC500ED76D1 /* MarkersManager.swift */; };
+		CE7283E21DC2853600ED76D1 /* MapViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283E11DC2853600ED76D1 /* MapViewProtocol.swift */; };
+		CE7283E51DC5EA6500ED76D1 /* MarkersManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283E41DC5EA6500ED76D1 /* MarkersManagerTests.swift */; };
+		CE7283E71DC5EAD600ED76D1 /* TestMarkersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283E61DC5EAD600ED76D1 /* TestMarkersProvider.swift */; };
+		CE7283F31DC65F7C00ED76D1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7283F11DC60EE500ED76D1 /* Alamofire.framework */; };
+		CE7283F51DC660AD00ED76D1 /* Pods_CarServiceInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7283F41DC660AD00ED76D1 /* Pods_CarServiceInfo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +64,7 @@
 
 /* Begin PBXFileReference section */
 		19D2AC2C127403293D88395F /* Pods_CarServiceInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarServiceInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C89FD1394BE32BAF1ED791 /* Pods-CarServiceInfoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfoTests/Pods-CarServiceInfoTests.release.xcconfig"; sourceTree = "<group>"; };
 		940FBA65508FA37E61B43D94 /* Pods_CarServiceInfoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarServiceInfoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9727BA6A1DB3B64B003D1272 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		9727BA6C1DB3BEBC003D1272 /* CurrentNews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentNews.swift; sourceTree = "<group>"; };
@@ -87,8 +98,19 @@
 		9794279F1DB5F36100F88A74 /* PriceDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDB.swift; sourceTree = "<group>"; };
 		C56A26885BEB0DB2383DE401 /* Pods-CarServiceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfo/Pods-CarServiceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		C7A960537ED405FDBD2913D4 /* Pods_CarServiceInfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarServiceInfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CE7283D71DC1171300ED76D1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDecorator.swift; sourceTree = "<group>"; };
+		CE7283D71DC1171300ED76D1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
+		CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersProvider.swift; sourceTree = "<group>"; };
+		CE7283DF1DC27EC500ED76D1 /* MarkersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersManager.swift; sourceTree = "<group>"; };
+		CE7283E11DC2853600ED76D1 /* MapViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewProtocol.swift; sourceTree = "<group>"; };
+		CE7283E41DC5EA6500ED76D1 /* MarkersManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersManagerTests.swift; sourceTree = "<group>"; };
+		CE7283E61DC5EAD600ED76D1 /* TestMarkersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMarkersProvider.swift; sourceTree = "<group>"; };
+		CE7283EA1DC5F2BB00ED76D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CE7283F11DC60EE500ED76D1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/CarServiceInfo-hhrfvblvedxajoenfnpxhduiuezn/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		CE7283F41DC660AD00ED76D1 /* Pods_CarServiceInfo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_CarServiceInfo.framework; path = "../../Library/Developer/Xcode/DerivedData/CarServiceInfo-hhrfvblvedxajoenfnpxhduiuezn/Build/Products/Debug-iphonesimulator/Pods_CarServiceInfo.framework"; sourceTree = "<group>"; };
 		F4DBC2268F4B2F6A495A6925 /* Pods-CarServiceInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfo/Pods-CarServiceInfo.debug.xcconfig"; sourceTree = "<group>"; };
+		F9A831C1B418234831C1A983 /* Pods-CarServiceInfoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfoTests/Pods-CarServiceInfoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +126,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE7283F51DC660AD00ED76D1 /* Pods_CarServiceInfo.framework in Frameworks */,
+				CE7283F31DC65F7C00ED76D1 /* Alamofire.framework in Frameworks */,
+				7ED9CB3AE0891D6D729C5205 /* Pods_CarServiceInfoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +147,8 @@
 			children = (
 				F4DBC2268F4B2F6A495A6925 /* Pods-CarServiceInfo.debug.xcconfig */,
 				C56A26885BEB0DB2383DE401 /* Pods-CarServiceInfo.release.xcconfig */,
+				F9A831C1B418234831C1A983 /* Pods-CarServiceInfoTests.debug.xcconfig */,
+				79C89FD1394BE32BAF1ED791 /* Pods-CarServiceInfoTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -172,6 +199,7 @@
 		97536CE01DA8E53900D56DCF /* CarServiceInfoTests */ = {
 			isa = PBXGroup;
 			children = (
+				CE7283E31DC5EA3D00ED76D1 /* Model */,
 				97536CE11DA8E53900D56DCF /* CarServiceInfoTests.swift */,
 				97536CE31DA8E53900D56DCF /* Info.plist */,
 			);
@@ -196,6 +224,10 @@
 				9794279F1DB5F36100F88A74 /* PriceDB.swift */,
 				9794279D1DB5EEAE00F88A74 /* Message.swift */,
 				9787D22B1DB23F5700EEE271 /* Generated */,
+				CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */,
+				CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */,
+				CE7283DF1DC27EC500ED76D1 /* MarkersManager.swift */,
+				CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -205,6 +237,7 @@
 			children = (
 				9787D2361DB2542800EEE271 /* PriceGroupCell.swift */,
 				9787D24A1DB2683C00EEE271 /* PriceCell.swift */,
+				CE7283E11DC2853600ED76D1 /* MapViewProtocol.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -253,9 +286,21 @@
 			name = Generated;
 			sourceTree = "<group>";
 		};
+		CE7283E31DC5EA3D00ED76D1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE7283E41DC5EA6500ED76D1 /* MarkersManagerTests.swift */,
+				CE7283E61DC5EAD600ED76D1 /* TestMarkersProvider.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EF1CAD431D635AC3A1BF5D7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE7283F41DC660AD00ED76D1 /* Pods_CarServiceInfo.framework */,
+				CE7283F11DC60EE500ED76D1 /* Alamofire.framework */,
+				CE7283EA1DC5F2BB00ED76D1 /* XCTest.framework */,
 				19D2AC2C127403293D88395F /* Pods_CarServiceInfo.framework */,
 				940FBA65508FA37E61B43D94 /* Pods_CarServiceInfoTests.framework */,
 				C7A960537ED405FDBD2913D4 /* Pods_CarServiceInfoUITests.framework */,
@@ -290,9 +335,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 97536CF41DA8E53900D56DCF /* Build configuration list for PBXNativeTarget "CarServiceInfoTests" */;
 			buildPhases = (
+				0D7A76C6546ECF8A737946A8 /* [CP] Check Pods Manifest.lock */,
 				97536CD91DA8E53900D56DCF /* Sources */,
 				97536CDA1DA8E53900D56DCF /* Frameworks */,
 				97536CDB1DA8E53900D56DCF /* Resources */,
+				B72EEBDE0148B089846CEC26 /* [CP] Embed Pods Frameworks */,
+				D4BEAD075C6540F0076D9F3C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -415,6 +463,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarServiceInfo/Pods-CarServiceInfo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		0D7A76C6546ECF8A737946A8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
 		4180A19647D5AD0ADB6CE24F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -445,6 +508,36 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarServiceInfo/Pods-CarServiceInfo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B72EEBDE0148B089846CEC26 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarServiceInfoTests/Pods-CarServiceInfoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D4BEAD075C6540F0076D9F3C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CarServiceInfoTests/Pods-CarServiceInfoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -462,6 +555,9 @@
 				9787D2371DB2542800EEE271 /* PriceGroupCell.swift in Sources */,
 				9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */,
 				9727BA6D1DB3BEBC003D1272 /* CurrentNews.swift in Sources */,
+				CE7283E21DC2853600ED76D1 /* MapViewProtocol.swift in Sources */,
+				CE7283E01DC27EC500ED76D1 /* MarkersManager.swift in Sources */,
+				CE7283DA1DC25C2D00ED76D1 /* MapMarker.swift in Sources */,
 				9727BA6B1DB3B64B003D1272 /* Constants.swift in Sources */,
 				9787D22F1DB24B3200EEE271 /* PriceGroupKindVC.swift in Sources */,
 				9787D2471DB25C6500EEE271 /* PriceGroup+CoreDataProperties.swift in Sources */,
@@ -469,6 +565,8 @@
 				97536CD21DA8E53900D56DCF /* CarServiceInfo.xcdatamodeld in Sources */,
 				9787D2441DB25C6500EEE271 /* Image+CoreDataClass.swift in Sources */,
 				9787D2451DB25C6500EEE271 /* Image+CoreDataProperties.swift in Sources */,
+				CE7283DE1DC25EA200ED76D1 /* MarkersProvider.swift in Sources */,
+				CE2C79E11DCF67C70072F790 /* MapViewDecorator.swift in Sources */,
 				9787D24B1DB2683C00EEE271 /* PriceCell.swift in Sources */,
 				9787D2491DB25C6500EEE271 /* Price+CoreDataProperties.swift in Sources */,
 			);
@@ -479,6 +577,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				97536CE21DA8E53900D56DCF /* CarServiceInfoTests.swift in Sources */,
+				CE7283E71DC5EAD600ED76D1 /* TestMarkersProvider.swift in Sources */,
+				CE7283E51DC5EA6500ED76D1 /* MarkersManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -528,7 +628,7 @@
 		97536CEF1DA8E53900D56DCF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -578,7 +678,7 @@
 		97536CF01DA8E53900D56DCF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
@@ -652,10 +752,17 @@
 		};
 		97536CF51DA8E53900D56DCF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A831C1B418234831C1A983 /* Pods-CarServiceInfoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7472D832U2;
+				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
+					"\"${PODS_ROOT}/GoogleMaps/Subspecs/Base/Frameworks\"",
+					"\"${PODS_ROOT}/GoogleMaps/Subspecs/Maps/Frameworks\"",
+				);
 				INFOPLIST_FILE = CarServiceInfoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseysamoylov.CarServiceInfoTests;
@@ -667,6 +774,7 @@
 		};
 		97536CF61DA8E53900D56DCF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79C89FD1394BE32BAF1ED791 /* Pods-CarServiceInfoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

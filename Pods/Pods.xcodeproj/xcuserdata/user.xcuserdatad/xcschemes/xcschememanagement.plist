@@ -14,15 +14,35 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-CarServiceInfoTests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftyJSON.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>05A7E5BA702806D910600796E9410D19</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>42BED7B7071C3A2ADF3BB419880AE269</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>79C040AFDDCE1BCBF6D8B5EB0B85887F</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BA44B7676BAFBC355775EB273115059C</key>
+		<key>A9BD2B83124EA3C873E43C80F30B1F07</key>
 		<dict>
 			<key>primary</key>
 			<true/>

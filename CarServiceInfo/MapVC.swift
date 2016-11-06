@@ -10,14 +10,17 @@ import UIKit
 import MapKit
 import GoogleMaps
 import CoreLocation
+import Alamofire
+import SwiftyJSON
 
-class MapVC: UIViewController, CLLocationManagerDelegate {
+class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate {
 
-    @IBOutlet weak var mapView: GMSMapView!
+    @IBOutlet weak var mapView: MapViewDecorator!
     
     let regionRadius: CLLocationDistance = 10000
     
     var locationManager = CLLocationManager()
+    var markersManager : MarkersManager?
 
     
     override func viewDidLoad() {
@@ -27,24 +30,26 @@ class MapVC: UIViewController, CLLocationManagerDelegate {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyHundredMeters
         self.locationManager.distanceFilter = 100
         self.locationManager.requestWhenInUseAuthorization()
-        //locationManager.requestAlwaysAuthorization()
-        //locationManager.startUpdatingLocation()
         
         // set initial location in Perm
         let camera = GMSCameraPosition.camera(withLatitude: LATITUDE_PERM,
                                               longitude: LONGITUDE_PERM, zoom: 10)
         self.mapView.camera = camera
-        //let initialLocation = CLLocation(latitude: LATITUDE_PERM, longitude: LONGITUDE_PERM)
-        //centerMapOnLocation(initialLocation)
         
-        //mapView.delegate = self
-        
-        let marker = GMSMarker()
-        marker.position = CLLocationCoordinate2DMake(LATITUDE_PERM, LONGITUDE_PERM)
-        marker.title = "Пермь"
-        marker.snippet = "Россия"
-        marker.map = mapView
+       
+        Alamofire.request(COORDINATES_URL).responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                self.markersManager = MarkersManager(MarkersJsonProvider(jsonObjectArray: json))
+                self.markersManager!.delegate = self
+                self.markersManager?.update()
+            case .failure(let error):
+                print(error)
+            }
+        }
 
+        
     }
     
     
@@ -57,30 +62,26 @@ class MapVC: UIViewController, CLLocationManagerDelegate {
     private func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
         // 3
         if status == .authorizedWhenInUse {
-            
-            // 4
             self.locationManager.startUpdatingLocation()
-            
-            //5
             self.mapView.isMyLocationEnabled = true
             self.mapView.settings.myLocationButton = true
         }
     }
     
-    // 6
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
-            
-            // 7
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
             
-            // 8
             locationManager.stopUpdatingLocation()
         }
         
     }
 
-    
+    internal func didChangeMarkers(_ markersManager: MarkersManager, changedMarkers:[MapMarker]){
+        for marker in changedMarkers{
+            marker.mapView = self.mapView
+        }
+    }
     
     /*
     // MARK: - Navigation

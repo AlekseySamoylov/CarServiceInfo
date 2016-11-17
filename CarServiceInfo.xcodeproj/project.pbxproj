@@ -180,8 +180,6 @@
 			isa = PBXGroup;
 			children = (
 				97536CFF1DA8F04C00D56DCF /* Service */,
-				97536CFE1DA8F04100D56DCF /* Util */,
-				97536CFD1DA8F03500D56DCF /* Resources */,
 				97536CFC1DA8F02000D56DCF /* Controller */,
 				97536CFB1DA8F01900D56DCF /* View */,
 				97536CFA1DA8F00F00D56DCF /* Model */,
@@ -218,16 +216,8 @@
 		97536CFA1DA8F00F00D56DCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				9787D23E1DB25C6500EEE271 /* Image+CoreDataClass.swift */,
-				9787D2401DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift */,
-				9787D2421DB25C6500EEE271 /* Price+CoreDataClass.swift */,
-				9794279F1DB5F36100F88A74 /* PriceDB.swift */,
-				9794279D1DB5EEAE00F88A74 /* Message.swift */,
-				9787D22B1DB23F5700EEE271 /* Generated */,
-				CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */,
-				CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */,
-				CE7283DF1DC27EC500ED76D1 /* MarkersManager.swift */,
-				CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */,
+				97941DD01DDD5A5C007FCC3E /* Map */,
+				97941DCF1DDD5A45007FCC3E /* Price */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -235,9 +225,8 @@
 		97536CFB1DA8F01900D56DCF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9787D2361DB2542800EEE271 /* PriceGroupCell.swift */,
-				9787D24A1DB2683C00EEE271 /* PriceCell.swift */,
-				CE7283E11DC2853600ED76D1 /* MapViewProtocol.swift */,
+				97941DD21DDD5A86007FCC3E /* Map */,
+				97941DD11DDD5A79007FCC3E /* Price */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -245,26 +234,10 @@
 		97536CFC1DA8F02000D56DCF /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				9787D22C1DB246D100EEE271 /* MapVC.swift */,
-				9787D22E1DB24B3200EEE271 /* PriceGroupKindVC.swift */,
-				9787D2301DB2519100EEE271 /* PriceGroupVC.swift */,
-				9787D2321DB251EE00EEE271 /* PriceVC.swift */,
+				97941DD41DDD5A9D007FCC3E /* Map */,
+				97941DD31DDD5A92007FCC3E /* Price */,
 			);
 			name = Controller;
-			sourceTree = "<group>";
-		};
-		97536CFD1DA8F03500D56DCF /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Resources;
-			sourceTree = "<group>";
-		};
-		97536CFE1DA8F04100D56DCF /* Util */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Util;
 			sourceTree = "<group>";
 		};
 		97536CFF1DA8F04C00D56DCF /* Service */ = {
@@ -284,6 +257,65 @@
 				9787D2431DB25C6500EEE271 /* Price+CoreDataProperties.swift */,
 			);
 			name = Generated;
+			sourceTree = "<group>";
+		};
+		97941DCF1DDD5A45007FCC3E /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				9787D23E1DB25C6500EEE271 /* Image+CoreDataClass.swift */,
+				9787D2401DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift */,
+				9787D2421DB25C6500EEE271 /* Price+CoreDataClass.swift */,
+				9794279F1DB5F36100F88A74 /* PriceDB.swift */,
+				9794279D1DB5EEAE00F88A74 /* Message.swift */,
+				9787D22B1DB23F5700EEE271 /* Generated */,
+			);
+			name = Price;
+			sourceTree = "<group>";
+		};
+		97941DD01DDD5A5C007FCC3E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */,
+				CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */,
+				CE7283DF1DC27EC500ED76D1 /* MarkersManager.swift */,
+				CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		97941DD11DDD5A79007FCC3E /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				9787D2361DB2542800EEE271 /* PriceGroupCell.swift */,
+				9787D24A1DB2683C00EEE271 /* PriceCell.swift */,
+			);
+			name = Price;
+			sourceTree = "<group>";
+		};
+		97941DD21DDD5A86007FCC3E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CE7283E11DC2853600ED76D1 /* MapViewProtocol.swift */,
+			);
+			name = Map;
+			sourceTree = "<group>";
+		};
+		97941DD31DDD5A92007FCC3E /* Price */ = {
+			isa = PBXGroup;
+			children = (
+				9787D22E1DB24B3200EEE271 /* PriceGroupKindVC.swift */,
+				9787D2301DB2519100EEE271 /* PriceGroupVC.swift */,
+				9787D2321DB251EE00EEE271 /* PriceVC.swift */,
+			);
+			name = Price;
+			sourceTree = "<group>";
+		};
+		97941DD41DDD5A9D007FCC3E /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				9787D22C1DB246D100EEE271 /* MapVC.swift */,
+			);
+			name = Map;
 			sourceTree = "<group>";
 		};
 		CE7283E31DC5EA3D00ED76D1 /* Model */ = {
@@ -382,7 +414,6 @@
 				TargetAttributes = {
 					97536CC51DA8E53900D56DCF = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = 7472D832U2;
 						ProvisioningStyle = Automatic;
 					};
 					97536CDC1DA8E53900D56DCF = {

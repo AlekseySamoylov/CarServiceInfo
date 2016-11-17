@@ -36,7 +36,6 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate
                                               longitude: LONGITUDE_PERM, zoom: 10)
         self.mapView.camera = camera
         
-       
         Alamofire.request(COORDINATES_URL).responseJSON { response in
             switch response.result {
             case .success(let value):
@@ -51,7 +50,6 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate
 
         
     }
-    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -71,10 +69,8 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.first {
             mapView.camera = GMSCameraPosition(target: location.coordinate, zoom: 15, bearing: 0, viewingAngle: 0)
-            
             locationManager.stopUpdatingLocation()
         }
-        
     }
 
     internal func didChangeMarkers(_ markersManager: MarkersManager, changedMarkers:[MapMarker]){

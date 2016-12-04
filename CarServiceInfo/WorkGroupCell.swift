@@ -1,5 +1,5 @@
 //
-//  PriceGroupCell.swift
+//  WorkGroupCell.swift
 //  CarServiceInfo
 //
 //  Created by ALEKSEY SAMOYLOV on 10/15/16.
@@ -8,17 +8,15 @@
 
 import UIKit
 
-class PriceGroupCell: UITableViewCell {
+class WorkGroupCell: UITableViewCell {
 
     @IBOutlet weak var thumb: UIImageView!
 
     @IBOutlet weak var title: UILabel!
     
-    func configureCell(item: PriceGroup) {
+    
+    func configureCell(item: WorkGroup) {
         title.text = item.title
-
-        if let image = item.toImage?.image as? UIImage {
-            thumb.image = image
-        }
+        
     }
 }

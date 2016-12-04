@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2327e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9eT-n6-aGm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9eT-n6-aGm">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -75,7 +75,7 @@
         <!--Предлагаем-->
         <scene sceneID="ctA-Xc-VAj">
             <objects>
-                <viewController id="D9Y-d4-AL3" customClass="PriceGroupKindVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="D9Y-d4-AL3" customClass="WorkGroupKindVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xH9-Z5-vgc"/>
                         <viewControllerLayoutGuide type="bottom" id="inp-gf-1wP"/>
@@ -84,10 +84,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-Iq-hcd">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-Iq-hcd">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PriceGroupCell" rowHeight="140" id="f2I-8g-HIm" customClass="PriceGroupCell" customModule="CarServiceInfo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WorkGroupCell" rowHeight="140" id="f2I-8g-HIm" userLabel="WorkGroupCell" customClass="WorkGroupCell" customModule="CarServiceInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f2I-8g-HIm" id="dd0-7Z-bHo">
@@ -134,23 +136,17 @@
                                         <connections>
                                             <outlet property="thumb" destination="PBh-I7-6mn" id="2IS-3w-6zI"/>
                                             <outlet property="title" destination="Ysi-eV-yB8" id="Trc-QR-ejw"/>
-                                            <segue destination="mwe-9d-pMf" kind="show" identifier="PriceListSegue" id="A5D-ZI-YEg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="wuU-Iq-hcd" firstAttribute="top" secondItem="xH9-Z5-vgc" secondAttribute="bottom" id="7wS-yv-r7H"/>
-                            <constraint firstItem="inp-gf-1wP" firstAttribute="top" secondItem="wuU-Iq-hcd" secondAttribute="bottom" id="OZz-zG-eKI"/>
-                            <constraint firstAttribute="trailing" secondItem="wuU-Iq-hcd" secondAttribute="trailing" id="Ymp-u2-UbX"/>
-                            <constraint firstItem="wuU-Iq-hcd" firstAttribute="leading" secondItem="jkB-V1-61o" secondAttribute="leading" id="jAF-VZ-lGX"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Предлагаем" id="hJJ-dS-mSk"/>
                     <connections>
                         <outlet property="tableView" destination="wuU-Iq-hcd" id="VTT-pn-JSC"/>
+                        <segue destination="mwe-9d-pMf" kind="show" identifier="WorkListSegue" id="Lqm-bk-5f3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wS1-fs-TBa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,7 +158,7 @@
             <objects>
                 <navigationController id="A6F-Yh-ciq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мой кабинет" image="globe" id="8mH-If-ywB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nJy-WJ-GKS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nJy-WJ-GKS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -358,7 +354,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qob-vO-srr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Услуги" image="search" id="CgR-9q-Hc2"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vws-ht-cKV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="vws-ht-cKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -374,7 +370,7 @@
         <!--Услуги-->
         <scene sceneID="u1m-Ff-B8t">
             <objects>
-                <viewController id="mwe-9d-pMf" customClass="PriceGroupVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mwe-9d-pMf" customClass="WorkGroupVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="9FQ-YG-gnV"/>
                         <viewControllerLayoutGuide type="bottom" id="hRA-G1-fyb"/>
@@ -383,10 +379,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-mI-4gr">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-mI-4gr">
+                                <frame key="frameInset" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PriceCell" rowHeight="140" id="AEK-wj-jqs" customClass="PriceCell" customModule="CarServiceInfo" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WorkCell" rowHeight="140" id="AEK-wj-jqs" userLabel="WorkCell" customClass="WorkCell" customModule="CarServiceInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AEK-wj-jqs" id="ZFB-i4-yBV">
@@ -432,33 +430,27 @@
                                         <connections>
                                             <outlet property="thumb" destination="U1O-Vs-scd" id="8Nl-TC-ap5"/>
                                             <outlet property="title" destination="OzY-T9-euE" id="Wce-ba-fXs"/>
-                                            <segue destination="jnb-yM-Z0n" kind="show" identifier="PriceDetailsSegue" id="Zr9-Bf-vpn"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="hRA-G1-fyb" firstAttribute="top" secondItem="CO7-mI-4gr" secondAttribute="bottom" id="6Wn-t5-czi"/>
-                            <constraint firstAttribute="trailing" secondItem="CO7-mI-4gr" secondAttribute="trailing" id="aaX-yt-bSf"/>
-                            <constraint firstItem="CO7-mI-4gr" firstAttribute="leading" secondItem="djx-mp-vqj" secondAttribute="leading" id="kS6-64-eh3"/>
-                            <constraint firstItem="CO7-mI-4gr" firstAttribute="top" secondItem="9FQ-YG-gnV" secondAttribute="bottom" id="mmL-cN-7ue"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Услуги" id="dpg-6a-elI"/>
                     <connections>
                         <outlet property="tableView" destination="CO7-mI-4gr" id="kX7-la-Cni"/>
+                        <segue destination="jnb-yM-Z0n" kind="show" identifier="WorkDetailsSegue" id="YZc-9g-1UB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70R-4o-JAt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4245" y="654"/>
         </scene>
-        <!--PriceVC-->
+        <!--WorkVC-->
         <scene sceneID="zC1-Et-5KO">
             <objects>
-                <viewController id="jnb-yM-Z0n" customClass="PriceVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jnb-yM-Z0n" customClass="WorkVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gFY-rP-4vt"/>
                         <viewControllerLayoutGuide type="bottom" id="IsC-Fz-Kei"/>

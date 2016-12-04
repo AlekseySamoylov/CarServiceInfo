@@ -14,9 +14,4 @@ protocol MapViewProtocol{
 }
 
 public class GoogleMapView : GMSMapView, MapViewProtocol{
-    
-    
-   // required public init?(coder aDecoder: NSCoder) {
-   //     super.init(coder: aDecoder)
-   // }
 }

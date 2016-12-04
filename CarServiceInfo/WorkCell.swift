@@ -1,5 +1,5 @@
 //
-//  PriceCell.swift
+//  WorkCell.swift
 //  CarServiceInfo
 //
 //  Created by ALEKSEY SAMOYLOV on 10/15/16.
@@ -8,15 +8,17 @@
 
 import UIKit
 
-class PriceCell: UITableViewCell {
+class WorkCell: UITableViewCell {
     @IBOutlet weak var thumb: UIImageView!
     
     @IBOutlet weak var title: UILabel!
     
-    func configureCell(item: Price) {
+
+    func configureCell(item: Work) {
         title.text = item.title
-        if let image = item.toImage?.image as? UIImage {
+        /*if let image = item.toImage?.image as? UIImage {
             thumb.image = image
-        }    }
+        }  */
+    }
 
 }

@@ -20,27 +20,31 @@
 		97536CE21DA8E53900D56DCF /* CarServiceInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97536CE11DA8E53900D56DCF /* CarServiceInfoTests.swift */; };
 		97536CED1DA8E53900D56DCF /* CarServiceInfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97536CEC1DA8E53900D56DCF /* CarServiceInfoUITests.swift */; };
 		9787D22D1DB246D100EEE271 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D22C1DB246D100EEE271 /* MapVC.swift */; };
-		9787D22F1DB24B3200EEE271 /* PriceGroupKindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D22E1DB24B3200EEE271 /* PriceGroupKindVC.swift */; };
-		9787D2311DB2519100EEE271 /* PriceGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2301DB2519100EEE271 /* PriceGroupVC.swift */; };
-		9787D2331DB251EE00EEE271 /* PriceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2321DB251EE00EEE271 /* PriceVC.swift */; };
-		9787D2371DB2542800EEE271 /* PriceGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2361DB2542800EEE271 /* PriceGroupCell.swift */; };
+		9787D22F1DB24B3200EEE271 /* WorkGroupKindVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D22E1DB24B3200EEE271 /* WorkGroupKindVC.swift */; };
+		9787D2311DB2519100EEE271 /* WorkGroupVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2301DB2519100EEE271 /* WorkGroupVC.swift */; };
+		9787D2331DB251EE00EEE271 /* WorkVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2321DB251EE00EEE271 /* WorkVC.swift */; };
+		9787D2371DB2542800EEE271 /* WorkGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2361DB2542800EEE271 /* WorkGroupCell.swift */; };
 		9787D2441DB25C6500EEE271 /* Image+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D23E1DB25C6500EEE271 /* Image+CoreDataClass.swift */; };
 		9787D2451DB25C6500EEE271 /* Image+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D23F1DB25C6500EEE271 /* Image+CoreDataProperties.swift */; };
 		9787D2461DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2401DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift */; };
 		9787D2471DB25C6500EEE271 /* PriceGroup+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2411DB25C6500EEE271 /* PriceGroup+CoreDataProperties.swift */; };
 		9787D2481DB25C6500EEE271 /* Price+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2421DB25C6500EEE271 /* Price+CoreDataClass.swift */; };
 		9787D2491DB25C6500EEE271 /* Price+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D2431DB25C6500EEE271 /* Price+CoreDataProperties.swift */; };
-		9787D24B1DB2683C00EEE271 /* PriceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D24A1DB2683C00EEE271 /* PriceCell.swift */; };
+		9787D24B1DB2683C00EEE271 /* WorkCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9787D24A1DB2683C00EEE271 /* WorkCell.swift */; };
 		9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279D1DB5EEAE00F88A74 /* Message.swift */; };
 		979427A01DB5F36100F88A74 /* PriceDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279F1DB5F36100F88A74 /* PriceDB.swift */; };
 		CE2C79E11DCF67C70072F790 /* MapViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */; };
+		CE2C79FA1DE1AFE30072F790 /* DataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F41DE1AFE30072F790 /* DataUpdater.swift */; };
+		CE2C79FB1DE1AFE30072F790 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F51DE1AFE30072F790 /* Entity.swift */; };
+		CE2C79FD1DE1AFE30072F790 /* ModelDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F71DE1AFE30072F790 /* ModelDataUpdater.swift */; };
+		CE2C79FE1DE1AFE30072F790 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F81DE1AFE30072F790 /* Work.swift */; };
+		CE2C79FF1DE1AFE30072F790 /* WorkGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F91DE1AFE30072F790 /* WorkGroup.swift */; };
+		CE2C7A4B1DF09ADD0072F790 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7A4A1DF09ADD0072F790 /* Repository.swift */; };
 		CE7283D81DC1171300ED76D1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CE7283D71DC1171300ED76D1 /* Podfile */; };
 		CE7283DA1DC25C2D00ED76D1 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */; };
 		CE7283DE1DC25EA200ED76D1 /* MarkersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */; };
 		CE7283E01DC27EC500ED76D1 /* MarkersManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283DF1DC27EC500ED76D1 /* MarkersManager.swift */; };
 		CE7283E21DC2853600ED76D1 /* MapViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283E11DC2853600ED76D1 /* MapViewProtocol.swift */; };
-		CE7283E51DC5EA6500ED76D1 /* MarkersManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283E41DC5EA6500ED76D1 /* MarkersManagerTests.swift */; };
-		CE7283E71DC5EAD600ED76D1 /* TestMarkersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283E61DC5EAD600ED76D1 /* TestMarkersProvider.swift */; };
 		CE7283F31DC65F7C00ED76D1 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7283F11DC60EE500ED76D1 /* Alamofire.framework */; };
 		CE7283F51DC660AD00ED76D1 /* Pods_CarServiceInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE7283F41DC660AD00ED76D1 /* Pods_CarServiceInfo.framework */; };
 /* End PBXBuildFile section */
@@ -83,29 +87,34 @@
 		97536CEC1DA8E53900D56DCF /* CarServiceInfoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServiceInfoUITests.swift; sourceTree = "<group>"; };
 		97536CEE1DA8E53900D56DCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9787D22C1DB246D100EEE271 /* MapVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
-		9787D22E1DB24B3200EEE271 /* PriceGroupKindVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceGroupKindVC.swift; sourceTree = "<group>"; };
-		9787D2301DB2519100EEE271 /* PriceGroupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceGroupVC.swift; sourceTree = "<group>"; };
-		9787D2321DB251EE00EEE271 /* PriceVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceVC.swift; sourceTree = "<group>"; };
-		9787D2361DB2542800EEE271 /* PriceGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceGroupCell.swift; sourceTree = "<group>"; };
+		9787D22E1DB24B3200EEE271 /* WorkGroupKindVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkGroupKindVC.swift; sourceTree = "<group>"; };
+		9787D2301DB2519100EEE271 /* WorkGroupVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkGroupVC.swift; sourceTree = "<group>"; };
+		9787D2321DB251EE00EEE271 /* WorkVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkVC.swift; sourceTree = "<group>"; };
+		9787D2361DB2542800EEE271 /* WorkGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkGroupCell.swift; sourceTree = "<group>"; };
 		9787D23E1DB25C6500EEE271 /* Image+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataClass.swift"; path = "../Image+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9787D23F1DB25C6500EEE271 /* Image+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Image+CoreDataProperties.swift"; path = "../Image+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9787D2401DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PriceGroup+CoreDataClass.swift"; path = "../PriceGroup+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9787D2411DB25C6500EEE271 /* PriceGroup+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "PriceGroup+CoreDataProperties.swift"; path = "../PriceGroup+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		9787D2421DB25C6500EEE271 /* Price+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Price+CoreDataClass.swift"; path = "../Price+CoreDataClass.swift"; sourceTree = "<group>"; };
 		9787D2431DB25C6500EEE271 /* Price+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Price+CoreDataProperties.swift"; path = "../Price+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		9787D24A1DB2683C00EEE271 /* PriceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCell.swift; sourceTree = "<group>"; };
+		9787D24A1DB2683C00EEE271 /* WorkCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkCell.swift; sourceTree = "<group>"; };
 		9794279D1DB5EEAE00F88A74 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		9794279F1DB5F36100F88A74 /* PriceDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDB.swift; sourceTree = "<group>"; };
 		C56A26885BEB0DB2383DE401 /* Pods-CarServiceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfo/Pods-CarServiceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		C7A960537ED405FDBD2913D4 /* Pods_CarServiceInfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarServiceInfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDecorator.swift; sourceTree = "<group>"; };
+		CE2C79F41DE1AFE30072F790 /* DataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataUpdater.swift; path = "../../../Documents/CarServiceInfo — копия/DataUpdater.swift"; sourceTree = "<group>"; };
+		CE2C79F51DE1AFE30072F790 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = "../../../Documents/CarServiceInfo — копия/Entity.swift"; sourceTree = "<group>"; };
+		CE2C79F71DE1AFE30072F790 /* ModelDataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelDataUpdater.swift; path = "../../../Documents/CarServiceInfo — копия/ModelDataUpdater.swift"; sourceTree = "<group>"; };
+		CE2C79F81DE1AFE30072F790 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Work.swift; path = "../../../Documents/CarServiceInfo — копия/Work.swift"; sourceTree = "<group>"; };
+		CE2C79F91DE1AFE30072F790 /* WorkGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkGroup.swift; path = "../../../Documents/CarServiceInfo — копия/WorkGroup.swift"; sourceTree = "<group>"; };
+		CE2C7A021DE2A0810072F790 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
+		CE2C7A4A1DF09ADD0072F790 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		CE7283D71DC1171300ED76D1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
 		CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersProvider.swift; sourceTree = "<group>"; };
 		CE7283DF1DC27EC500ED76D1 /* MarkersManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersManager.swift; sourceTree = "<group>"; };
 		CE7283E11DC2853600ED76D1 /* MapViewProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewProtocol.swift; sourceTree = "<group>"; };
-		CE7283E41DC5EA6500ED76D1 /* MarkersManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersManagerTests.swift; sourceTree = "<group>"; };
-		CE7283E61DC5EAD600ED76D1 /* TestMarkersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestMarkersProvider.swift; sourceTree = "<group>"; };
 		CE7283EA1DC5F2BB00ED76D1 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		CE7283F11DC60EE500ED76D1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../Library/Developer/Xcode/DerivedData/CarServiceInfo-hhrfvblvedxajoenfnpxhduiuezn/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		CE7283F41DC660AD00ED76D1 /* Pods_CarServiceInfo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_CarServiceInfo.framework; path = "../../Library/Developer/Xcode/DerivedData/CarServiceInfo-hhrfvblvedxajoenfnpxhduiuezn/Build/Products/Debug-iphonesimulator/Pods_CarServiceInfo.framework"; sourceTree = "<group>"; };
@@ -197,7 +206,6 @@
 		97536CE01DA8E53900D56DCF /* CarServiceInfoTests */ = {
 			isa = PBXGroup;
 			children = (
-				CE7283E31DC5EA3D00ED76D1 /* Model */,
 				97536CE11DA8E53900D56DCF /* CarServiceInfoTests.swift */,
 				97536CE31DA8E53900D56DCF /* Info.plist */,
 			);
@@ -216,8 +224,10 @@
 		97536CFA1DA8F00F00D56DCF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C79F31DDF88F40072F790 /* Works */,
 				97941DD01DDD5A5C007FCC3E /* Map */,
 				97941DCF1DDD5A45007FCC3E /* Price */,
+				CE2C7A4A1DF09ADD0072F790 /* Repository.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -226,7 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				97941DD21DDD5A86007FCC3E /* Map */,
-				97941DD11DDD5A79007FCC3E /* Price */,
+				97941DD11DDD5A79007FCC3E /* Work */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -235,7 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				97941DD41DDD5A9D007FCC3E /* Map */,
-				97941DD31DDD5A92007FCC3E /* Price */,
+				97941DD31DDD5A92007FCC3E /* Work */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -283,13 +293,13 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
-		97941DD11DDD5A79007FCC3E /* Price */ = {
+		97941DD11DDD5A79007FCC3E /* Work */ = {
 			isa = PBXGroup;
 			children = (
-				9787D2361DB2542800EEE271 /* PriceGroupCell.swift */,
-				9787D24A1DB2683C00EEE271 /* PriceCell.swift */,
+				9787D2361DB2542800EEE271 /* WorkGroupCell.swift */,
+				9787D24A1DB2683C00EEE271 /* WorkCell.swift */,
 			);
-			name = Price;
+			name = Work;
 			sourceTree = "<group>";
 		};
 		97941DD21DDD5A86007FCC3E /* Map */ = {
@@ -300,14 +310,14 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
-		97941DD31DDD5A92007FCC3E /* Price */ = {
+		97941DD31DDD5A92007FCC3E /* Work */ = {
 			isa = PBXGroup;
 			children = (
-				9787D22E1DB24B3200EEE271 /* PriceGroupKindVC.swift */,
-				9787D2301DB2519100EEE271 /* PriceGroupVC.swift */,
-				9787D2321DB251EE00EEE271 /* PriceVC.swift */,
+				9787D22E1DB24B3200EEE271 /* WorkGroupKindVC.swift */,
+				9787D2301DB2519100EEE271 /* WorkGroupVC.swift */,
+				9787D2321DB251EE00EEE271 /* WorkVC.swift */,
 			);
-			name = Price;
+			name = Work;
 			sourceTree = "<group>";
 		};
 		97941DD41DDD5A9D007FCC3E /* Map */ = {
@@ -318,18 +328,22 @@
 			name = Map;
 			sourceTree = "<group>";
 		};
-		CE7283E31DC5EA3D00ED76D1 /* Model */ = {
+		CE2C79F31DDF88F40072F790 /* Works */ = {
 			isa = PBXGroup;
 			children = (
-				CE7283E41DC5EA6500ED76D1 /* MarkersManagerTests.swift */,
-				CE7283E61DC5EAD600ED76D1 /* TestMarkersProvider.swift */,
+				CE2C79F41DE1AFE30072F790 /* DataUpdater.swift */,
+				CE2C79F51DE1AFE30072F790 /* Entity.swift */,
+				CE2C79F71DE1AFE30072F790 /* ModelDataUpdater.swift */,
+				CE2C79F81DE1AFE30072F790 /* Work.swift */,
+				CE2C79F91DE1AFE30072F790 /* WorkGroup.swift */,
 			);
-			name = Model;
+			name = Works;
 			sourceTree = "<group>";
 		};
 		EF1CAD431D635AC3A1BF5D7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				CE2C7A021DE2A0810072F790 /* GoogleMaps.framework */,
 				CE7283F41DC660AD00ED76D1 /* Pods_CarServiceInfo.framework */,
 				CE7283F11DC60EE500ED76D1 /* Alamofire.framework */,
 				CE7283EA1DC5F2BB00ED76D1 /* XCTest.framework */,
@@ -576,29 +590,35 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2C7A4B1DF09ADD0072F790 /* Repository.swift in Sources */,
 				979427A01DB5F36100F88A74 /* PriceDB.swift in Sources */,
 				97536CCC1DA8E53900D56DCF /* ViewController.swift in Sources */,
 				9787D2481DB25C6500EEE271 /* Price+CoreDataClass.swift in Sources */,
 				9787D2461DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift in Sources */,
+				CE2C79FA1DE1AFE30072F790 /* DataUpdater.swift in Sources */,
+				CE2C79FD1DE1AFE30072F790 /* ModelDataUpdater.swift in Sources */,
 				9787D22D1DB246D100EEE271 /* MapVC.swift in Sources */,
-				9787D2331DB251EE00EEE271 /* PriceVC.swift in Sources */,
+				9787D2331DB251EE00EEE271 /* WorkVC.swift in Sources */,
 				97536CCA1DA8E53900D56DCF /* AppDelegate.swift in Sources */,
-				9787D2371DB2542800EEE271 /* PriceGroupCell.swift in Sources */,
+				9787D2371DB2542800EEE271 /* WorkGroupCell.swift in Sources */,
 				9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */,
+				CE2C79FB1DE1AFE30072F790 /* Entity.swift in Sources */,
 				9727BA6D1DB3BEBC003D1272 /* CurrentNews.swift in Sources */,
 				CE7283E21DC2853600ED76D1 /* MapViewProtocol.swift in Sources */,
 				CE7283E01DC27EC500ED76D1 /* MarkersManager.swift in Sources */,
 				CE7283DA1DC25C2D00ED76D1 /* MapMarker.swift in Sources */,
 				9727BA6B1DB3B64B003D1272 /* Constants.swift in Sources */,
-				9787D22F1DB24B3200EEE271 /* PriceGroupKindVC.swift in Sources */,
+				CE2C79FE1DE1AFE30072F790 /* Work.swift in Sources */,
+				9787D22F1DB24B3200EEE271 /* WorkGroupKindVC.swift in Sources */,
 				9787D2471DB25C6500EEE271 /* PriceGroup+CoreDataProperties.swift in Sources */,
-				9787D2311DB2519100EEE271 /* PriceGroupVC.swift in Sources */,
+				9787D2311DB2519100EEE271 /* WorkGroupVC.swift in Sources */,
+				CE2C79FF1DE1AFE30072F790 /* WorkGroup.swift in Sources */,
 				97536CD21DA8E53900D56DCF /* CarServiceInfo.xcdatamodeld in Sources */,
 				9787D2441DB25C6500EEE271 /* Image+CoreDataClass.swift in Sources */,
 				9787D2451DB25C6500EEE271 /* Image+CoreDataProperties.swift in Sources */,
 				CE7283DE1DC25EA200ED76D1 /* MarkersProvider.swift in Sources */,
 				CE2C79E11DCF67C70072F790 /* MapViewDecorator.swift in Sources */,
-				9787D24B1DB2683C00EEE271 /* PriceCell.swift in Sources */,
+				9787D24B1DB2683C00EEE271 /* WorkCell.swift in Sources */,
 				9787D2491DB25C6500EEE271 /* Price+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -608,8 +628,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				97536CE21DA8E53900D56DCF /* CarServiceInfoTests.swift in Sources */,
-				CE7283E71DC5EAD600ED76D1 /* TestMarkersProvider.swift in Sources */,
-				CE7283E51DC5EA6500ED76D1 /* MarkersManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -788,6 +806,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7472D832U2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Maps/Frameworks",
+				);
 				"FRAMEWORK_SEARCH_PATHS[arch=*]" = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/Alamofire\"",
@@ -796,6 +818,7 @@
 				);
 				INFOPLIST_FILE = CarServiceInfoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseysamoylov.CarServiceInfoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -810,8 +833,13 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7472D832U2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleMaps/Subspecs/Maps/Frameworks",
+				);
 				INFOPLIST_FILE = CarServiceInfoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				"OTHER_LDFLAGS[arch=*]" = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.alekseysamoylov.CarServiceInfoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;

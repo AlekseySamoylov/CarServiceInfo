@@ -11,6 +11,7 @@ import Foundation
 let BASE_URL = "http://www.alekseysamoylov.com"
 let TEST_URL = "http://www.alekseysamoylov.com:8080/note-1.0/ios-get-user"
 let COORDINATES_URL = "http://www.alekseysamoylov.com:8080/serviceiii/rest/coordinates"
+let WORK_GROUPS_URL = "http://www.alekseysamoylov.com:8080/serviceiii/rest/works"
 let LATITUDE_PERM = 57.997237
 let LONGITUDE_PERM = 56.306726
 let API_KEY = "test_key"

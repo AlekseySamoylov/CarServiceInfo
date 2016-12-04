@@ -7,8 +7,6 @@
 //
 
 import Foundation
-import Alamofire
-import SwiftyJSON
 
 /*
  Протокол для поставщика маркеров
@@ -18,19 +16,16 @@ protocol MarkersProviderProtocol{
 }
 
 /*
- Класс-поставщик маркеров из json массива, полученного в сервера
+ Класс-поставщик маркеров из репозитория данных
  */
-class MarkersJsonProvider: MarkersProviderProtocol{
-    private var markers = [MapMarker]()
+class MarkersRepositoryProvider: MarkersProviderProtocol{
+    private let repository : RepositoryProtocol
     
-    init(jsonObjectArray: JSON){
-        for marker in jsonObjectArray{
-            self.markers.append(MapMarker(jsonObject: marker.1))
-        }
+    init(repository: RepositoryProtocol){
+        self.repository = repository
     }
     
-    
     func getMarkers()->[MapMarker]{
-        return self.markers
+        return repository.getCoordinates()
     }
 }

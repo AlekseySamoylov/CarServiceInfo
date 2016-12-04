@@ -3,6 +3,7 @@ platform :ios, '10.0'
 target "CarServiceInfo" do
     pod 'GoogleMaps'
     pod 'Alamofire', '~> 4.0'
+    pod 'EVReflection'
     pod 'SwiftyJSON'
     target 'CarServiceInfoTests' do
         inherit! :search_paths

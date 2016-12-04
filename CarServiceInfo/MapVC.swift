@@ -11,9 +11,8 @@ import MapKit
 import GoogleMaps
 import CoreLocation
 import Alamofire
-import SwiftyJSON
 
-class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate {
+class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate, RepositoryDelegate {
 
     @IBOutlet weak var mapView: MapViewDecorator!
     
@@ -21,6 +20,7 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate
     
     var locationManager = CLLocationManager()
     var markersManager : MarkersManager?
+    let repository = Repository()
 
     
     override func viewDidLoad() {
@@ -35,14 +35,12 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate
         let camera = GMSCameraPosition.camera(withLatitude: LATITUDE_PERM,
                                               longitude: LONGITUDE_PERM, zoom: 10)
         self.mapView.camera = camera
+        repository.delegate = self
         
-        Alamofire.request(COORDINATES_URL).responseJSON { response in
+        Alamofire.request(COORDINATES_URL).responseString { response in
             switch response.result {
             case .success(let value):
-                let json = JSON(value)
-                self.markersManager = MarkersManager(MarkersJsonProvider(jsonObjectArray: json))
-                self.markersManager!.delegate = self
-                self.markersManager?.update()
+               self.repository.setCoordinates(jsonString: value)
             case .failure(let error):
                 print(error)
             }
@@ -77,6 +75,17 @@ class MapVC: UIViewController, CLLocationManagerDelegate, MarkersManagerDelegate
         for marker in changedMarkers{
             marker.mapView = self.mapView
         }
+    }
+    
+    func workGroupsLoaded(){
+        
+    }
+    
+    func coordinatesLoaded(){
+        let provider = MarkersRepositoryProvider(repository: repository)
+        markersManager = MarkersManager(provider)
+        markersManager?.delegate = self
+        markersManager?.update()
     }
     
     /*

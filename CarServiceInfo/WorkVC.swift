@@ -1,5 +1,5 @@
 //
-//  PriceVC.swift
+//  WorkVC.swift
 //  CarServiceInfo
 //
 //  Created by ALEKSEY SAMOYLOV on 10/15/16.
@@ -7,9 +7,8 @@
 //
 
 import UIKit
-import CoreData
 
-class PriceVC: UIViewController, UINavigationControllerDelegate  {
+class WorkVC: UIViewController, UINavigationControllerDelegate  {
 
     @IBOutlet weak var priceTitle: UILabel!
 
@@ -19,14 +18,14 @@ class PriceVC: UIViewController, UINavigationControllerDelegate  {
     
     @IBOutlet weak var details: UITextView!
     
-    var priceItem: Price?
+    var workItem: Work?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let item = priceItem {
+        if let item = workItem {
             priceTitle.text = item.title
-            priceValue.text = item.price
+            priceValue.text = "\(item.price)"
             details.text = item.details
         }
         

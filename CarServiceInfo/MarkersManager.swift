@@ -38,11 +38,6 @@ class MarkersManager{
         }
     }
     
-    var filter : Int = 0{
-        didSet{
-            self.markers = self.markersProvider.getMarkers().filter({$0.type.isIncludeInNumber(self.filter)})
-        }
-    }
     
     func update(){
         let newMarkers = self.markers

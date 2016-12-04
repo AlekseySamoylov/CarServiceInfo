@@ -1,15 +1,18 @@
 //
-//  MarkersManagerTests.swift
+//  JsonConverterTests.swift
 //  CarServiceInfo
 //
-//  Created by User on 30.10.16.
+//  Created by User on 16.11.16.
 //  Copyright © 2016 ALEKSEY SAMOYLOV. All rights reserved.
 //
 
 import XCTest
+import Foundation
+import Alamofire
+import EVReflection
 @testable import CarServiceInfo
 
-class MarkersManagerTests: XCTestCase {
+class JsonConverterTests: XCTestCase {
     private class TestDelegateClass : MarkersManagerDelegate{
         var isDelegateCalled = false
         func didChangeMarkers(_ markersManager: MarkersManager, changedMarkers: [MapMarker]) {
@@ -33,33 +36,15 @@ class MarkersManagerTests: XCTestCase {
     }
     
     func testgetMarkers_WhenSetFilter_ReturnFilteredMarkers() {
-        let manager = createManager()
-        let expectedCount = 4
-        
-        manager.filter = 2
-        
-        XCTAssertEqual(expectedCount, manager.markers.count)
+        Alamofire.request("http://www.alekseysamoylov.com:8080/serviceiii/works").responseJSON { response in
+            print(response.request)  // original URL request
+            print(response.response) // HTTP URL response
+            print(response.data)     // server data
+            print(response.result)   // result of response serialization
+            
+            if let JSON = response.result.value {
+                print("JSON: \(JSON)")
+            }
+        }
     }
-    
-    func testsetMarkers_WhenChangeFilter_CallDelegate() {
-        let manager = createManager()
-        let delegate = TestDelegateClass()
-        manager.delegate = delegate
-        
-        manager.filter = 2
-        
-        XCTAssertTrue(delegate.isDelegateCalled)
-    }
-    
-    func testChangeFilter_WhenOldMarkersDoNotSatisfy_SetOldMarkersMapToNil() {
-        let manager = createManager()
-        manager.filter = 2
-        let marker = manager.markers.first!
-        marker.mapView = TestMapView()
-        
-        manager.filter = 1
-        
-        XCTAssertNil(marker.mapView)
-    }
-    
 }

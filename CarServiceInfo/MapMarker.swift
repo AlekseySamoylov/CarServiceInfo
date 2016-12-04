@@ -8,50 +8,14 @@
 
 import Foundation
 import GoogleMaps
-import SwiftyJSON
+import EVReflection
 
-enum MarkerType : Int{
-    case None = 0x0
-    case CentralOffice = 0x1
-    case Office = 0x2
-    }
-
-extension MarkerType{
-    func isIncludeInNumber(_ number:Int) -> Bool{
-        return self.rawValue & number > 0
-    }
-
-}
 /*
  Класс-оболочка для маркеров карты (GMSMarker)
 */
-class MapMarker{
+class MapMarker : EVObject {
     private let marker = GMSMarker()
-    init(jsonObject : JSON){
-        title = jsonObject["name"].string
-        snippet = jsonObject["details"].string
-        if let lat = jsonObject["latitude"].double{
-            latitude = lat
-        }
-        if let long = jsonObject["longitude"].double{
-            longitude = long
-        }
-        //универсальный код для десериализации
-        /*for (key, value) in json {
-            let keyName = key as String
-            let keyValue: String = value as! String
-            
-            // If property exists
-            if (self.respondsToSelector(NSSelectorFromString(keyName))) {
-                self.setValue(keyValue, forKey: keyName)
-            }
-        }*/
-    }
-    
-    init(_ type:MarkerType){
-        self.type = type
-    }
-    
+
     var latitude: Double{
         get{
             return self.marker.position.latitude
@@ -68,7 +32,7 @@ class MapMarker{
             self.marker.position = CLLocationCoordinate2DMake(self.latitude, newValue)
         }
     }
-    var title : String?{
+    var name : String?{
         get{
             return self.marker.title
         }
@@ -76,7 +40,7 @@ class MapMarker{
             self.marker.title = newValue
         }
     }
-    var snippet : String?{
+    var details : String?{
         get{
             return self.marker.snippet
         }
@@ -92,6 +56,5 @@ class MapMarker{
             self.marker.map = newValue as? GMSMapView
         }
     }
-    var type = MarkerType.None
     
 }

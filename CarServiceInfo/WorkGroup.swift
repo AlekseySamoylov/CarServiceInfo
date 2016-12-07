@@ -10,8 +10,5 @@ import Foundation
 import EVReflection
 
 class WorkGroup : Entity{
-    required init(){
-        super.init()
-    }
     var works = [Work]()
 }

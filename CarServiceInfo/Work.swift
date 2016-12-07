@@ -10,12 +10,7 @@ import Foundation
 import EVReflection
 
 class Work : Entity{
-    required init(){
-        super.init()
-    }
-    
-    
-    var value = ""
+    var price : Double = 0
     var details = ""
     var workGroup : WorkGroup?
 }

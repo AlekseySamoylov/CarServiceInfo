@@ -10,10 +10,7 @@ import Foundation
 import EVReflection
 
 class Entity : EVObject{
-    required init(){
-        id = 0
-        title = ""
-    }
-    var id : Int64
-    var title : String
+    
+    var id : Int64 = 0
+    var title : String = ""
 }

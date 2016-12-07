@@ -17,7 +17,9 @@ protocol ModelDataUpdaterProtocol {
 }
 
 class ModelDataUpdater<T> : ModelDataUpdaterProtocol where T:Entity {
+    private var newData = [T]()
     var dataUpdater: DataUpdaterProtocol?
+    
     
     internal func getNewData() -> [Entity] {
         return [T]()
@@ -28,8 +30,8 @@ class ModelDataUpdater<T> : ModelDataUpdaterProtocol where T:Entity {
             Alamofire.request(getUrlForRequest()).responseJSON { response in
                 switch response.result {
                 case .success(let value):
-                    let jsonArray = JSON(value)
-                    
+                    self.newData.removeAll()
+                    self.newData = [T](json: "\(value)")
                 case .failure(let error):
                     print(error)
                 }

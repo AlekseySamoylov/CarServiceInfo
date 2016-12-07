@@ -34,12 +34,12 @@
 		9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279D1DB5EEAE00F88A74 /* Message.swift */; };
 		979427A01DB5F36100F88A74 /* PriceDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9794279F1DB5F36100F88A74 /* PriceDB.swift */; };
 		CE2C79E11DCF67C70072F790 /* MapViewDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */; };
-		CE2C79FA1DE1AFE30072F790 /* DataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F41DE1AFE30072F790 /* DataUpdater.swift */; };
-		CE2C79FB1DE1AFE30072F790 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F51DE1AFE30072F790 /* Entity.swift */; };
-		CE2C79FD1DE1AFE30072F790 /* ModelDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F71DE1AFE30072F790 /* ModelDataUpdater.swift */; };
-		CE2C79FE1DE1AFE30072F790 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F81DE1AFE30072F790 /* Work.swift */; };
-		CE2C79FF1DE1AFE30072F790 /* WorkGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C79F91DE1AFE30072F790 /* WorkGroup.swift */; };
 		CE2C7A4B1DF09ADD0072F790 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7A4A1DF09ADD0072F790 /* Repository.swift */; };
+		CE2C7A501DF7C18B0072F790 /* DataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7A4C1DF7C18B0072F790 /* DataUpdater.swift */; };
+		CE2C7A511DF7C18B0072F790 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7A4D1DF7C18B0072F790 /* Entity.swift */; };
+		CE2C7A521DF7C18B0072F790 /* Work.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7A4E1DF7C18B0072F790 /* Work.swift */; };
+		CE2C7A531DF7C18B0072F790 /* WorkGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7A4F1DF7C18B0072F790 /* WorkGroup.swift */; };
+		CE2C7A551DF7C1B00072F790 /* ModelDataUpdater.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2C7A541DF7C1B00072F790 /* ModelDataUpdater.swift */; };
 		CE7283D81DC1171300ED76D1 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = CE7283D71DC1171300ED76D1 /* Podfile */; };
 		CE7283DA1DC25C2D00ED76D1 /* MapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */; };
 		CE7283DE1DC25EA200ED76D1 /* MarkersProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */; };
@@ -103,13 +103,13 @@
 		C56A26885BEB0DB2383DE401 /* Pods-CarServiceInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarServiceInfo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CarServiceInfo/Pods-CarServiceInfo.release.xcconfig"; sourceTree = "<group>"; };
 		C7A960537ED405FDBD2913D4 /* Pods_CarServiceInfoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarServiceInfoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE2C79E01DCF67C70072F790 /* MapViewDecorator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewDecorator.swift; sourceTree = "<group>"; };
-		CE2C79F41DE1AFE30072F790 /* DataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DataUpdater.swift; path = "../../../Documents/CarServiceInfo — копия/DataUpdater.swift"; sourceTree = "<group>"; };
-		CE2C79F51DE1AFE30072F790 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = "../../../Documents/CarServiceInfo — копия/Entity.swift"; sourceTree = "<group>"; };
-		CE2C79F71DE1AFE30072F790 /* ModelDataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ModelDataUpdater.swift; path = "../../../Documents/CarServiceInfo — копия/ModelDataUpdater.swift"; sourceTree = "<group>"; };
-		CE2C79F81DE1AFE30072F790 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Work.swift; path = "../../../Documents/CarServiceInfo — копия/Work.swift"; sourceTree = "<group>"; };
-		CE2C79F91DE1AFE30072F790 /* WorkGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WorkGroup.swift; path = "../../../Documents/CarServiceInfo — копия/WorkGroup.swift"; sourceTree = "<group>"; };
 		CE2C7A021DE2A0810072F790 /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = Pods/GoogleMaps/Subspecs/Maps/Frameworks/GoogleMaps.framework; sourceTree = "<group>"; };
 		CE2C7A4A1DF09ADD0072F790 /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		CE2C7A4C1DF7C18B0072F790 /* DataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataUpdater.swift; sourceTree = "<group>"; };
+		CE2C7A4D1DF7C18B0072F790 /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		CE2C7A4E1DF7C18B0072F790 /* Work.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Work.swift; sourceTree = "<group>"; };
+		CE2C7A4F1DF7C18B0072F790 /* WorkGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WorkGroup.swift; sourceTree = "<group>"; };
+		CE2C7A541DF7C1B00072F790 /* ModelDataUpdater.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelDataUpdater.swift; sourceTree = "<group>"; };
 		CE7283D71DC1171300ED76D1 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		CE7283D91DC25C2D00ED76D1 /* MapMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapMarker.swift; sourceTree = "<group>"; };
 		CE7283DD1DC25EA200ED76D1 /* MarkersProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkersProvider.swift; sourceTree = "<group>"; };
@@ -331,11 +331,11 @@
 		CE2C79F31DDF88F40072F790 /* Works */ = {
 			isa = PBXGroup;
 			children = (
-				CE2C79F41DE1AFE30072F790 /* DataUpdater.swift */,
-				CE2C79F51DE1AFE30072F790 /* Entity.swift */,
-				CE2C79F71DE1AFE30072F790 /* ModelDataUpdater.swift */,
-				CE2C79F81DE1AFE30072F790 /* Work.swift */,
-				CE2C79F91DE1AFE30072F790 /* WorkGroup.swift */,
+				CE2C7A541DF7C1B00072F790 /* ModelDataUpdater.swift */,
+				CE2C7A4C1DF7C18B0072F790 /* DataUpdater.swift */,
+				CE2C7A4D1DF7C18B0072F790 /* Entity.swift */,
+				CE2C7A4E1DF7C18B0072F790 /* Work.swift */,
+				CE2C7A4F1DF7C18B0072F790 /* WorkGroup.swift */,
 			);
 			name = Works;
 			sourceTree = "<group>";
@@ -590,33 +590,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2C7A531DF7C18B0072F790 /* WorkGroup.swift in Sources */,
 				CE2C7A4B1DF09ADD0072F790 /* Repository.swift in Sources */,
 				979427A01DB5F36100F88A74 /* PriceDB.swift in Sources */,
+				CE2C7A551DF7C1B00072F790 /* ModelDataUpdater.swift in Sources */,
 				97536CCC1DA8E53900D56DCF /* ViewController.swift in Sources */,
 				9787D2481DB25C6500EEE271 /* Price+CoreDataClass.swift in Sources */,
 				9787D2461DB25C6500EEE271 /* PriceGroup+CoreDataClass.swift in Sources */,
-				CE2C79FA1DE1AFE30072F790 /* DataUpdater.swift in Sources */,
-				CE2C79FD1DE1AFE30072F790 /* ModelDataUpdater.swift in Sources */,
 				9787D22D1DB246D100EEE271 /* MapVC.swift in Sources */,
 				9787D2331DB251EE00EEE271 /* WorkVC.swift in Sources */,
+				CE2C7A501DF7C18B0072F790 /* DataUpdater.swift in Sources */,
+				CE2C7A521DF7C18B0072F790 /* Work.swift in Sources */,
 				97536CCA1DA8E53900D56DCF /* AppDelegate.swift in Sources */,
 				9787D2371DB2542800EEE271 /* WorkGroupCell.swift in Sources */,
 				9794279E1DB5EEAE00F88A74 /* Message.swift in Sources */,
-				CE2C79FB1DE1AFE30072F790 /* Entity.swift in Sources */,
 				9727BA6D1DB3BEBC003D1272 /* CurrentNews.swift in Sources */,
 				CE7283E21DC2853600ED76D1 /* MapViewProtocol.swift in Sources */,
 				CE7283E01DC27EC500ED76D1 /* MarkersManager.swift in Sources */,
 				CE7283DA1DC25C2D00ED76D1 /* MapMarker.swift in Sources */,
 				9727BA6B1DB3B64B003D1272 /* Constants.swift in Sources */,
-				CE2C79FE1DE1AFE30072F790 /* Work.swift in Sources */,
 				9787D22F1DB24B3200EEE271 /* WorkGroupKindVC.swift in Sources */,
 				9787D2471DB25C6500EEE271 /* PriceGroup+CoreDataProperties.swift in Sources */,
 				9787D2311DB2519100EEE271 /* WorkGroupVC.swift in Sources */,
-				CE2C79FF1DE1AFE30072F790 /* WorkGroup.swift in Sources */,
 				97536CD21DA8E53900D56DCF /* CarServiceInfo.xcdatamodeld in Sources */,
 				9787D2441DB25C6500EEE271 /* Image+CoreDataClass.swift in Sources */,
 				9787D2451DB25C6500EEE271 /* Image+CoreDataProperties.swift in Sources */,
 				CE7283DE1DC25EA200ED76D1 /* MarkersProvider.swift in Sources */,
+				CE2C7A511DF7C18B0072F790 /* Entity.swift in Sources */,
 				CE2C79E11DCF67C70072F790 /* MapViewDecorator.swift in Sources */,
 				9787D24B1DB2683C00EEE271 /* WorkCell.swift in Sources */,
 				9787D2491DB25C6500EEE271 /* Price+CoreDataProperties.swift in Sources */,

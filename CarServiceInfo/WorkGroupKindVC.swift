@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Alamofire
+import Foundation
 
 class WorkGroupKindVC: UIViewController, RepositoryDelegate, UITableViewDelegate, UITableViewDataSource {
     
@@ -22,7 +23,7 @@ class WorkGroupKindVC: UIViewController, RepositoryDelegate, UITableViewDelegate
         tableView.delegate = self
         tableView.dataSource = self
         repository.delegate = self
-        
+       
         downloadWorkData()
     }
     
@@ -83,7 +84,7 @@ class WorkGroupKindVC: UIViewController, RepositoryDelegate, UITableViewDelegate
     
     // Возвращает высоку ячейки
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 150
+        return 80
     }
     
     func workGroupsLoaded(){

@@ -38,17 +38,10 @@ class WorkGroupKindVC: UIViewController, RepositoryDelegate, UITableViewDelegate
         }
         // Do any additional setup after loading the view.
     }
-    
-    
-    
-    // Возвращает количество секций
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return repository.getWorkGroups().count
-    }
-    
+        
     // Возвращает колличество строк в секции
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return repository.getWorkGroups()[section].works.count
+        return repository.getWorkGroups().count//1//repository.getWorkGroups()[section].works.count
     }
     
     // Заполняет ячейки

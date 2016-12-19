@@ -76,7 +76,7 @@
         <!--Предлагаем-->
         <scene sceneID="ctA-Xc-VAj">
             <objects>
-                <viewController id="D9Y-d4-AL3" customClass="WorkGroupKindVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController hidesBottomBarWhenPushed="YES" id="D9Y-d4-AL3" customClass="WorkGroupKindVC" customModule="CarServiceInfo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="xH9-Z5-vgc"/>
                         <viewControllerLayoutGuide type="bottom" id="inp-gf-1wP"/>
@@ -85,19 +85,17 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-Iq-hcd">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" rowHeight="50" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="wuU-Iq-hcd">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WorkGroupCell" rowHeight="80" id="f2I-8g-HIm" userLabel="WorkGroupCell" customClass="WorkGroupCell" customModule="CarServiceInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="65" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="f2I-8g-HIm" id="dd0-7Z-bHo">
-                                            <frame key="frameInset" minX="0.0%" width="375" height="79"/>
+                                            <frame key="frameInset" minX="0.0%" width="375" height="80"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="67L-l2-Zfx">
+                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="67L-l2-Zfx">
                                                     <frame key="frameInset" width="375" height="80"/>
                                                     <subviews>
                                                         <view contentMode="scaleAspectFit" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PBh-I7-6mn">
@@ -137,7 +135,12 @@
                                 <sections/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="wuU-Iq-hcd" secondAttribute="bottom" id="153-uz-QqO"/>
+                            <constraint firstAttribute="trailing" secondItem="wuU-Iq-hcd" secondAttribute="trailing" id="INo-yv-pTt"/>
+                            <constraint firstItem="wuU-Iq-hcd" firstAttribute="leading" secondItem="jkB-V1-61o" secondAttribute="leading" id="Rdr-gn-o1V"/>
+                            <constraint firstItem="wuU-Iq-hcd" firstAttribute="top" secondItem="jkB-V1-61o" secondAttribute="top" id="SDN-FO-lRi"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Предлагаем" id="hJJ-dS-mSk"/>
                     <connections>
@@ -154,7 +157,7 @@
             <objects>
                 <navigationController id="A6F-Yh-ciq" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Мой кабинет" image="globe" id="8mH-If-ywB"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="nJy-WJ-GKS">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nJy-WJ-GKS">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -350,7 +353,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qob-vO-srr" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Услуги" image="search" id="CgR-9q-Hc2"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="vws-ht-cKV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="vws-ht-cKV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -375,16 +378,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="138" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-mI-4gr">
-                                <frame key="frameInset" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="CO7-mI-4gr">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="WorkCell" rowHeight="80" id="AEK-wj-jqs" userLabel="WorkCell" customClass="WorkCell" customModule="CarServiceInfo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="92" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AEK-wj-jqs" id="ZFB-i4-yBV">
-                                            <frame key="frameInset" width="375" height="79"/>
+                                            <frame key="frameInset" width="375" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XGQ-oe-RbD">
@@ -427,6 +428,12 @@
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="CO7-mI-4gr" secondAttribute="bottom" id="EH1-QI-Ydc"/>
+                            <constraint firstItem="CO7-mI-4gr" firstAttribute="top" secondItem="djx-mp-vqj" secondAttribute="top" id="ONe-Fj-Ctr"/>
+                            <constraint firstAttribute="trailing" secondItem="CO7-mI-4gr" secondAttribute="trailing" id="eUt-Ox-ITj"/>
+                            <constraint firstItem="CO7-mI-4gr" firstAttribute="leading" secondItem="djx-mp-vqj" secondAttribute="leading" id="gOP-3f-EfH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Услуги" id="dpg-6a-elI"/>
                     <connections>

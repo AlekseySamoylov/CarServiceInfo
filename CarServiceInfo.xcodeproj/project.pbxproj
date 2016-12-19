@@ -235,8 +235,8 @@
 		97536CFB1DA8F01900D56DCF /* View */ = {
 			isa = PBXGroup;
 			children = (
-				97941DD21DDD5A86007FCC3E /* Map */,
 				97941DD11DDD5A79007FCC3E /* Work */,
+				97941DD21DDD5A86007FCC3E /* Map */,
 			);
 			name = View;
 			sourceTree = "<group>";
